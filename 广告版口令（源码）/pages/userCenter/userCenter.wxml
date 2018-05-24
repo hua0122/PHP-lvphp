@@ -1,0 +1,75 @@
+<!--pages/userCenter/userCenter.wxml-->
+<view class='userinfo-bg'>
+  <view class='userinfo-l'>
+    <button class='sqbtn' wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 加载中••• </button>
+    <block wx:else>
+      <view class='userinfo-head'>
+        <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      </view>
+      <view class='userinfo-txt'>
+        <view class='username'>{{userInfo.nickName}}</view>
+        <view class='userinfo-balance'>余额：<text class='colred'>{{amount}}</text>元</view>
+      </view>
+    </block>
+  </view>
+  <view class='userinfo-r tobalance'>
+    <navigator url="../balance/balance" class='report-btn'>
+      <text class='withdraw-deposit-btn'>提现</text>
+    </navigator>
+  </view>
+</view>
+
+<navigator url="/pages/record/record" hover-class="navigator-hover">
+  <view class='userinfo-bg mt18'>
+    <view class='userinfo-l'>
+      <view class='ico'>
+      <image src='/images/record.png'></image>
+      <text>我的记录</text>
+      </view>
+    </view>
+    <view class='userinfo-r'>
+      <view  class='userinfo-r-ico'>
+        <image src='/images/right-arrows.png'></image>
+        <text>查看红包记录</text>
+      </view>
+    </view>
+  </view>
+</navigator>
+
+<navigator url="/pages/help/help" hover-class="navigator-hover">
+<view class='userinfo-bg mt18 borb'>
+  <view class='userinfo-l'>
+    <view class='ico'>
+    <image src='/images/question.png'></image>
+    <text>常见问题</text>
+    </view>
+  </view>
+  <view class='userinfo-r'>
+    <view  class='userinfo-r-ico'>
+      <image src='/images/right-arrows.png'></image>
+      <text>了解更多</text>
+    </view>
+  </view>
+</view>
+</navigator>
+
+<view class='userinfo-bg lxkf'>
+  <view class='userinfo-l'>
+    <view class='ico'>
+    <image src='/images/customer-service.png'></image>
+    <text>联系客服</text>
+    </view>
+  </view>
+  <view class='userinfo-r'>
+    <view  class='userinfo-r-ico'>
+      <image src='/images/right-arrows.png'></image>
+      <text>关注公众号，红包天天领</text>
+    </view>
+  </view>
+  <button class='btn-kf' open-type="contact"></button> 
+</view>
+
+<view class='adv'>
+  <image src='{{advpt.slide_pic}}'></image>
+  <text>广告</text>
+</view>

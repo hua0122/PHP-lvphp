@@ -1,0 +1,30 @@
+<!--help.wxml-->
+<view class='container'>
+<scroll-view class='con' scroll-y="{{true}}">
+  <view class="help-list">
+    <block wx:for="{{lists}}" wx:for-item="obj">
+      <view class="list {{control === index ? 'on' : ''}}">
+        <view class='tit' bindtap='onshow' data-id="{{index}}">
+          <text data-id="{{index}}">{{index+1}}. {{obj.tit}}</text>
+          <view class='icon' data-id="{{index}}">
+            <image src='/images/updown-arrows.png'></image>
+          </view>
+        </view>
+        <view class='txt'>{{obj.txt}}</view>
+      </view>
+    </block>
+    <button class='btn' open-type="contact"><text>联系在线客服</text></button> 
+  </view>
+  <!-- 广告 -->
+  <navigator url='{{gotoPlatformAdvdetial}}{{platformID}}'>
+    <view class='adv'>
+      <image src='{{platformAdvImg}}'></image>
+      <text>广告</text>
+    </view>
+  </navigator>
+  <view class='foot'><text class='version'>版本： v{{version}}</text>
+  <!-- <text class='line'>|</text>
+  <navigator url="../report/report" class='report' hover-class="none">举报</navigator> -->
+  </view>
+</scroll-view>
+</view>

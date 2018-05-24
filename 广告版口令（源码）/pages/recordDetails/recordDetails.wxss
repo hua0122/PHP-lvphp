@@ -1,0 +1,391 @@
+/**recordDetails.wxss**/
+
+.userinfo{
+  display: block;
+  width: 100%;
+  flex-direction: column;
+  text-align: center;
+}
+.upper{
+  padding-top: 30rpx;
+  padding-bottom: 26rpx;
+  background: #262d47;
+  position: relative;
+  background:#DE4C56 ;
+}
+.upper .headframe{
+  display: block;
+  width: 200rpx;
+  height: 192rpx;
+  text-align: center;
+  margin: 0 auto;
+}
+.userinfo-avatar {
+  width: 142rpx;
+  height: 142rpx;
+  border-radius: 50%;
+  margin-top: 40rpx
+}
+.userinfo-name{
+  font-size: 32rpx;
+  color: #fff;
+  margin: 22rpx 0 30rpx;
+}
+.textCN{
+  font-size: 40rpx;
+  color: #fff;
+  padding: 0 60rpx;
+}
+.textCN .icon{
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10rpx;
+  
+}
+.textCN .icon image{
+  width: 54rpx;
+  height: 54rpx;
+}
+
+.btn{
+  width: 600rpx;
+  height: 72rpx;
+  border: 1rpx solid transparent;
+  margin: 40rpx auto 30rpx;
+  background: #F0F0F0;
+  opacity: 0.6;
+  color: #666;
+  font-size: 28rpx;
+  border-radius: 8rpx;
+  position: relative;
+}
+ .btn .micrImage{
+  width: 20rpx;
+  height: 28rpx;
+  float: left;
+  position: absolute;
+  left:130rpx;
+  top:20rpx;
+}
+.btn>text{
+  margin-left: 16rpx;
+}
+.btn.on{
+  background: #F0F0F0;
+  opacity: 1;
+  color: #666666;
+}
+.btn.on.hover-btn{
+  opacity: .8;
+}
+.lqje{
+  height: 124rpx;
+  font-size: 38rpx;
+  color: #fff;
+  margin: 0 auto 14rpx;
+}
+.lqje text{
+  font-size: 2.5em;
+  font-weight: 700;
+  margin-right: 10rpx;
+}
+.count{
+  width: 100%;
+  text-align: center;
+}
+.count>view{
+  display: inline-block;
+}
+.count-t{
+  font-size: 28rpx;
+  color: #fff;
+  padding: 4rpx 56rpx;
+  background: transparent;
+  border: none
+}
+.count-t image{
+  width: 36rpx;
+  height: 36rpx;
+  float: left;
+  padding-top:16rpx;
+  margin-right: 3rpx;
+
+}
+button::after{
+  display: none
+}
+
+.mide-record{
+  position: absolute;
+  width: 220rpx;
+  padding: 30rpx 0;
+  text-align: center;
+  background: rgba(0,0,0,.8);
+  border-radius: 30rpx;
+  left: 265rpx;
+  top: 70rpx;
+  display: none; 
+}
+.mide-record.on{
+  display: block;
+}
+.mide-record .mide-img{
+  display: inline-block;
+  width: 140rpx;
+  height: 157rpx;
+}
+.mide-record.on .mide-img{
+  background: url("http://xcx.gzzh.co/hb-bnm/mide-record.gif") no-repeat center 0/auto 100%;
+}
+
+
+.redinfo{
+  width: 700rpx;
+  margin:0 auto;
+  text-align: left;
+  line-height: 80rpx;
+  font-size: 28rpx;
+}
+.redinfo>view{
+  display: inline-block;
+}
+.redinfo .infotxt{
+  color: #333333;
+}
+.redinfo .report{
+  float: right;
+  color: #666;
+}
+.ls{
+  width:700rpx;
+  margin: 0 auto;
+  font-size: 28rpx;
+  color: #333;
+}
+.ls-item{
+  margin-bottom: 10rpx;
+  padding: 24rpx 24rpx;
+  background: #fff;
+  border-radius: 12rpx;
+  text-align: left;
+  overflow: hidden;
+  position: relative;
+}
+.ls-item:last-child{
+  margin-bottom: 0;
+}
+.ls-item text{
+  line-height: 46rpx;
+}
+
+.ls-s{
+  display: inline-block;
+  vertical-align: top;
+  color: #333;
+}
+.ls-img{
+  width: 124rpx;
+  height: 124rpx;
+  margin-top:4rpx
+}
+.ls-img image{
+  width:100%;
+  height: 100%;
+}
+.ls-c{
+  margin-left: 20rpx;
+}
+.ls-c .ls-c-t{
+  display: inline-block;
+  width: 310rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space:nowrap;
+}
+.ls-r{
+  text-align: right;
+  position: absolute;
+  right: 24rpx;
+  top: 24rpx;
+}
+.ls-r.on{
+  padding-top: 48rpx;
+}
+.maxmoney{
+  color: #DE4C56;
+  font-size: 28rpx;
+  overflow: hidden;
+  margin-bottom: 4rpx;
+}
+.maxmoney image{
+  width: 28rpx;
+  height: 22rpx;
+  float: right;
+  margin-top: 12rpx;
+  margin-right: 10rpx;
+}
+.maxmoney text{
+  float: right;
+}
+.ls-r text{
+  line-height: 44rpx;
+}
+.ls-r-b{
+  display: block;
+  color: #999;
+}
+.ls-c-b{
+  width: 220rpx;
+  height: 60rpx;
+  margin-top: 20rpx;
+}
+.ls-c-b .audio{
+  height: 56rpx;
+  line-height: 60rpx;
+  border-radius: 12rpx;
+  font-size: 24rpx;
+  text-indent: 0.8em;
+  color: #666;
+  background: #F0F0F0;
+  border: 1rpx solid #E6E6E6;
+  position: relative;
+}
+.ls-c-b .audio.on text{
+  display: none;
+}
+.audio .bfz{
+  height: 72rpx;
+  line-height: 74rpx;
+  background: #f8f8f8;
+  border-radius: 8rpx;
+  text-indent: 0.7em;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none 
+}
+.audio.on .bfz{
+  display: block;
+}
+.audio .bfz image{
+  width: 45rpx;
+  height: 30rpx;
+  position: absolute;
+  top: 16rpx;
+}
+.clear{
+  width: 100%;
+  height: 80rpx;
+}
+.question{
+  width: 100%;
+  font-size: 24rpx;
+  text-align: center;
+  color: #364a79;
+  position: absolute;
+  bottom: 20rpx;
+}
+.bold{
+  font-weight: 700;
+}
+
+
+/* 广告块 */
+.red-packetList-bg{
+  margin-bottom: 20rpx;
+  background: #fff;
+  height: auto;
+  width: 100%;
+}
+.red-packetList-imgbg{
+  width: 100%;
+  height: 400rpx;
+  overflow: hidden;
+  position: relative;
+}
+.red-packetList-imgbg image{
+  width: 100%;
+  height: 100%;
+}
+.red-packetList-imgbg #myVideo{
+  width: 100%;
+  height: 100%;
+}
+
+.red-packetList-contentype{
+  color: #fff;
+  font-size: 24rpx;
+  background: #DE4C56;
+  padding: 10rpx 16rpx;
+  border-radius: 4rpx;
+  position: absolute;
+  top: 28rpx;
+  left: 28rpx;
+}
+red-packetList-con{
+  width: 90%;
+  margin: 0 5%;
+  overflow: hidden;
+}
+
+.red-packetList-txt{
+  overflow: hidden;
+}
+.red-packetList-con{
+  width: 90%;
+  margin:0 5%;
+  padding: 10rpx 0;
+  overflow: hidden;
+  text-align: left;
+}
+.red-packetList-con-advIco{
+  padding: 0rpx 4rpx;
+  border:1rpx solid #DE4C56;
+  color: #DE4C56;
+  font-size: 28rpx;
+  line-height: 28rpx;
+  margin-right: 20rpx;
+  border-radius: 4rpx;
+  display: initial;
+  float: left;
+  margin-top: 12rpx;
+}
+.red-packetList-con-advConten{
+  font-size: 28rpx;
+  color: #333;
+  text-align: left;
+  display: initial;
+}
+
+/* 真心寄语 */
+.zxjy-zjetxt{
+  font-size: 28rpx;
+  color: #fff;
+  font-weight: 500;
+}
+.zxjy-zjetxt .je{
+  font-size: 36rpx;
+  margin-right: 8rpx;
+}
+.playaudio::before{
+content: '';
+display: block;
+height: 0;
+width: 0;
+border: 14rpx solid transparent;
+border-left-color: #999; 
+position: absolute;
+left: 22%;
+top: 50%;
+margin-top: -14rpx;
+}
+.playaudiobtn{
+  position: relative;
+}
+.playaudiobtn-ico{
+  width: 28rpx;
+  height: 28rpx;
+  position: absolute;
+  left:18%;
+  top:29%;
+}

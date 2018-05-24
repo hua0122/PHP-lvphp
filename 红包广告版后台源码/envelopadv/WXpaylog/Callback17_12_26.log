@@ -1,0 +1,4 @@
+[ 2017-12-26T16:13:54+08:00 ] 140.207.54.76 /adv_envelop/index.php/Api/Wxpay/OrderChange
+: 微信支付回调开始
+[ 2017-12-26T16:13:54+08:00 ] 140.207.54.76 /adv_envelop/index.php/Api/Wxpay/OrderChange
+: {"appid":"wx889375fdef84a6ee","bank_type":"CFT","cash_fee":"101","fee_type":"CNY","is_subscribe":"N","mch_id":"1489667292","nonce_str":"no5tizmy27jdx3zs7rnc8tvc6f1khwzr","openid":"oDLoC0R8t54twteP9Q2XSXIxhMjg","out_trade_no":"H2017122616134459720375","result_code":"SUCCESS","return_code":"SUCCESS","sign":"BBB4AF2807FED9CF46D3DE4D97D94B9E","time_end":"20171226161354","total_fee":"101","trade_type":"JSAPI","transaction_id":"4200000007201712261866392041"}

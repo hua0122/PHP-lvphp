@@ -1,0 +1,30 @@
+<!--share.wxml-->
+<view class="container">
+    <view class="box" wx:if="{{hasUserInfo}}">
+      <view class='upper'>
+        <view class='front'>
+          <view class='avatar'>
+            <image class='ownerimg' src='{{ownerImg}}'></image>
+          </view>
+          <view class='redtips'><text>{{ownerName}}</text><image src='../../images/redtips.png'></image></view>
+          <view class='describe'>{{wenan.describe[mode]}}</view>
+        </view>
+      </view>
+      <view class='lower'>
+        <view class='ewm'><view class='ewmImg'><image src='{{xcxewm}}'></image></view></view>
+        <view class='operation'>
+          <view class='btn'><button class='retransmission' open-type="share">转发到群聊</button></view>
+          <view class='btn'><button class='generate' bindtap='sheng'>生成朋友圈分享图</button></view>
+          <view class='mytry' bindtap='mytry'>{{ cid == 0 ? "我也试一试手气" : "← 返回"}}</view>
+        </view>
+         <!-- 广告 -->
+        <view class='adv'>
+          <image src='{{advImg.slide_pic}}'></image>
+          <text>广告</text>
+        </view>
+        <view class='zhygg'>
+          <view>咨询热线：<text bindtap='tel'>020-22096568</text></view>
+        </view>
+      </view>
+    </view>
+</view>

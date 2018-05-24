@@ -1,0 +1,60 @@
+[ 2017-12-19T00:03:58+08:00 ] 140.207.54.74 /adv_envelop/index.php/Api/Wxpay/OrderChange
+: 微信支付回调开始
+[ 2017-12-19T00:03:58+08:00 ] 140.207.54.74 /adv_envelop/index.php/Api/Wxpay/OrderChange
+: {"appid":"wx889375fdef84a6ee","bank_type":"ICBC_DEBIT","cash_fee":"103","fee_type":"CNY","is_subscribe":"N","mch_id":"1489667292","nonce_str":"sh0pp54hulnmiio0cvy8an23mn64q8ai","openid":"oDLoC0ftXVS9oOtyNDJnW2ZbxAJg","out_trade_no":"H2017121900035270064258","result_code":"SUCCESS","return_code":"SUCCESS","sign":"E3B047454E8498E8ED168D5579D95A53","time_end":"20171219000358","total_fee":"103","trade_type":"JSAPI","transaction_id":"4200000020201712196782389515"}
+[ 2017-12-19T00:06:38+08:00 ] 140.207.54.76 /adv_envelop/index.php/Api/Wxpay/OrderChange
+: 微信支付回调开始
+[ 2017-12-19T00:06:38+08:00 ] 140.207.54.76 /adv_envelop/index.php/Api/Wxpay/OrderChange
+: {"appid":"wx889375fdef84a6ee","bank_type":"ICBC_DEBIT","cash_fee":"3","fee_type":"CNY","is_subscribe":"N","mch_id":"1489667292","nonce_str":"lzsx4xniv5ojox4cofc8epx5o69lytqk","openid":"oDLoC0ftXVS9oOtyNDJnW2ZbxAJg","out_trade_no":"H2017121900063241216993","result_code":"SUCCESS","return_code":"SUCCESS","sign":"DF79F2BE371A0C3FF096195870E670E5","time_end":"20171219000638","total_fee":"3","trade_type":"JSAPI","transaction_id":"4200000025201712196847231085"}
+[ 2017-12-19T10:39:35+08:00 ] 140.207.54.75 /adv_envelop/index.php/Api/Wxpay/OrderChange
+: 微信支付回调开始
+[ 2017-12-19T10:39:35+08:00 ] 140.207.54.75 /adv_envelop/index.php/Api/Wxpay/OrderChange
+: {"appid":"wx889375fdef84a6ee","bank_type":"CFT","cash_fee":"103","fee_type":"CNY","is_subscribe":"N","mch_id":"1489667292","nonce_str":"ude5o15lrxco52oiyh973wryh5c6sx92","openid":"oDLoC0R38XmhPWGhKMACtESUDf8U","out_trade_no":"H2017121910393086166221","result_code":"SUCCESS","return_code":"SUCCESS","sign":"50290084027703E615B55D569F6ADD23","time_end":"20171219103934","total_fee":"103","trade_type":"JSAPI","transaction_id":"4200000027201712196998718986"}
+[ 2017-12-19T14:22:33+08:00 ] 140.207.54.76 /adv_envelop/index.php/Api/Wxpay/OrderChange
+: 微信支付回调开始
+[ 2017-12-19T14:22:33+08:00 ] 140.207.54.76 /adv_envelop/index.php/Api/Wxpay/OrderChange
+: {"appid":"wx889375fdef84a6ee","bank_type":"ICBC_DEBIT","cash_fee":"209","fee_type":"CNY","is_subscribe":"N","mch_id":"1489667292","nonce_str":"5w92drclo5vtgcmc3ezxutjnl2t9vgdp","openid":"oDLoC0ftXVS9oOtyNDJnW2ZbxAJg","out_trade_no":"H2017121914222543321754","result_code":"SUCCESS","return_code":"SUCCESS","sign":"1C8EC3E3626D7F6012BB2F73F3C0DF01","time_end":"20171219142232","total_fee":"209","trade_type":"JSAPI","transaction_id":"4200000004201712197136026155"}
+[ 2017-12-19T14:22:54+08:00 ] 140.207.54.75 /adv_envelop/index.php/Api/Wxpay/OrderChange
+: 微信支付回调开始
+[ 2017-12-19T14:22:54+08:00 ] 140.207.54.75 /adv_envelop/index.php/Api/Wxpay/OrderChange
+: {"appid":"wx889375fdef84a6ee","bank_type":"ICBC_DEBIT","cash_fee":"309","fee_type":"CNY","is_subscribe":"N","mch_id":"1489667292","nonce_str":"jywd5iv6wvs6tk89cjtqeviy2tttiv4t","openid":"oDLoC0eqTuhTbuoM3O3CqkAJgek0","out_trade_no":"H2017121914224818042610","result_code":"SUCCESS","return_code":"SUCCESS","sign":"013E2CA1836610647B61FD1B1C6B6109","time_end":"20171219142254","total_fee":"309","trade_type":"JSAPI","transaction_id":"4200000015201712197156498008"}
+[ 2017-12-19T14:26:15+08:00 ] 140.207.54.76 /adv_envelop/index.php/Api/Wxpay/OrderChange
+: 微信支付回调开始
+[ 2017-12-19T14:26:15+08:00 ] 140.207.54.76 /adv_envelop/index.php/Api/Wxpay/OrderChange
+: {"appid":"wx889375fdef84a6ee","bank_type":"CFT","cash_fee":"3","fee_type":"CNY","is_subscribe":"N","mch_id":"1489667292","nonce_str":"mynk3lilglu05p10hn2lglryu1sunrx6","openid":"oDLoC0b_oNYIRsRH5gyTGM9c0-5Q","out_trade_no":"H2017121914260416888971","result_code":"SUCCESS","return_code":"SUCCESS","sign":"C9C4762925441124F55B6E56A39B1C39","time_end":"20171219142615","total_fee":"3","trade_type":"JSAPI","transaction_id":"4200000013201712197133747888"}
+[ 2017-12-19T14:40:30+08:00 ] 140.207.54.74 /adv_envelop/index.php/Api/Wxpay/OrderChange
+: 微信支付回调开始
+[ 2017-12-19T14:40:30+08:00 ] 140.207.54.74 /adv_envelop/index.php/Api/Wxpay/OrderChange
+: {"appid":"wx889375fdef84a6ee","bank_type":"CFT","cash_fee":"103","fee_type":"CNY","is_subscribe":"N","mch_id":"1489667292","nonce_str":"a91plrtgk5s3tlfzl9vp03kis9vli8vf","openid":"oDLoC0b_oNYIRsRH5gyTGM9c0-5Q","out_trade_no":"H2017121914401816534947","result_code":"SUCCESS","return_code":"SUCCESS","sign":"A8FA7FF1BD65BB15F20923A4F8A01C7E","time_end":"20171219144029","total_fee":"103","trade_type":"JSAPI","transaction_id":"4200000017201712197144779746"}
+[ 2017-12-19T19:19:56+08:00 ] 140.207.54.75 /adv_envelop/index.php/Api/Wxpay/OrderChange
+: 微信支付回调开始
+[ 2017-12-19T19:19:56+08:00 ] 140.207.54.75 /adv_envelop/index.php/Api/Wxpay/OrderChange
+: {"appid":"wx889375fdef84a6ee","bank_type":"CFT","cash_fee":"103","fee_type":"CNY","is_subscribe":"N","mch_id":"1489667292","nonce_str":"debx2srrhl3whj0vt4qgvj95cb9rg5gh","openid":"oDLoC0SSBIV6t8npZfj2g9G3GQu0","out_trade_no":"H2017121919194972803295","result_code":"SUCCESS","return_code":"SUCCESS","sign":"14ABE83079E79A5AF5A886573F92A983","time_end":"20171219191955","total_fee":"103","trade_type":"JSAPI","transaction_id":"4200000012201712197351278953"}
+[ 2017-12-19T19:31:22+08:00 ] 140.207.54.74 /adv_envelop/index.php/Api/Wxpay/OrderChange
+: 微信支付回调开始
+[ 2017-12-19T19:31:22+08:00 ] 140.207.54.74 /adv_envelop/index.php/Api/Wxpay/OrderChange
+: {"appid":"wx889375fdef84a6ee","bank_type":"CFT","cash_fee":"101","fee_type":"CNY","is_subscribe":"N","mch_id":"1489667292","nonce_str":"ofnc7in7mnq69d2rt2wewc4da04y4fjw","openid":"oDLoC0SSBIV6t8npZfj2g9G3GQu0","out_trade_no":"H2017121919311628778522","result_code":"SUCCESS","return_code":"SUCCESS","sign":"DA4D4659C27F038140D59A8E4AF6B549","time_end":"20171219193121","total_fee":"101","trade_type":"JSAPI","transaction_id":"4200000005201712197267485487"}
+[ 2017-12-19T22:22:13+08:00 ] 140.207.54.75 /adv_envelop/index.php/Api/Wxpay/OrderChange
+: 微信支付回调开始
+[ 2017-12-19T22:22:13+08:00 ] 140.207.54.75 /adv_envelop/index.php/Api/Wxpay/OrderChange
+: {"appid":"wx889375fdef84a6ee","bank_type":"CFT","cash_fee":"5","fee_type":"CNY","is_subscribe":"N","mch_id":"1489667292","nonce_str":"e48nxzssu0qr1zlydbgm0hs3m5g8t7tr","openid":"oDLoC0SSBIV6t8npZfj2g9G3GQu0","out_trade_no":"H2017121922220468319956","result_code":"SUCCESS","return_code":"SUCCESS","sign":"63A5423452BE63C696832FDCED806D3A","time_end":"20171219222212","total_fee":"5","trade_type":"JSAPI","transaction_id":"4200000009201712197384366837"}
+[ 2017-12-19T23:11:56+08:00 ] 140.207.54.76 /adv_envelop/index.php/Api/Wxpay/OrderChange
+: 微信支付回调开始
+[ 2017-12-19T23:11:56+08:00 ] 140.207.54.76 /adv_envelop/index.php/Api/Wxpay/OrderChange
+: {"appid":"wx889375fdef84a6ee","bank_type":"CFT","cash_fee":"103","fee_type":"CNY","is_subscribe":"N","mch_id":"1489667292","nonce_str":"hx908t4vqyahx6b9n77j0t1cen9hexzd","openid":"oDLoC0b_oNYIRsRH5gyTGM9c0-5Q","out_trade_no":"H2017121923114493385563","result_code":"SUCCESS","return_code":"SUCCESS","sign":"382279D8C1B5CB62AB0A9237383107D4","time_end":"20171219231154","total_fee":"103","trade_type":"JSAPI","transaction_id":"4200000014201712197427839613"}
+[ 2017-12-19T23:15:19+08:00 ] 140.207.54.76 /adv_envelop/index.php/Api/Wxpay/OrderChange
+: 微信支付回调开始
+[ 2017-12-19T23:15:19+08:00 ] 140.207.54.76 /adv_envelop/index.php/Api/Wxpay/OrderChange
+: {"appid":"wx889375fdef84a6ee","bank_type":"CFT","cash_fee":"1","fee_type":"CNY","is_subscribe":"N","mch_id":"1489667292","nonce_str":"y5kqd1rkvpv8rbsb4u2wfs7mu8v6sw7o","openid":"oDLoC0cKVFSV14Eye-kz1WiHFRAk","out_trade_no":"H2017121923150380631545","result_code":"SUCCESS","return_code":"SUCCESS","sign":"EF403D7814A3B240B84B521FB993FF80","time_end":"20171219231518","total_fee":"1","trade_type":"JSAPI","transaction_id":"4200000007201712197514331824"}
+[ 2017-12-19T23:26:48+08:00 ] 140.207.54.75 /adv_envelop/index.php/Api/Wxpay/OrderChange
+: 微信支付回调开始
+[ 2017-12-19T23:26:48+08:00 ] 140.207.54.75 /adv_envelop/index.php/Api/Wxpay/OrderChange
+: {"appid":"wx889375fdef84a6ee","bank_type":"CFT","cash_fee":"106","fee_type":"CNY","is_subscribe":"N","mch_id":"1489667292","nonce_str":"1smtci5rp79hkjs8gfem87wahbn64a45","openid":"oDLoC0b_oNYIRsRH5gyTGM9c0-5Q","out_trade_no":"H2017121923264274117784","result_code":"SUCCESS","return_code":"SUCCESS","sign":"4E401B2CD6F91EA2818A5F8A7D0EC6A6","time_end":"20171219232647","total_fee":"106","trade_type":"JSAPI","transaction_id":"4200000022201712197461536425"}
+[ 2017-12-19T23:26:58+08:00 ] 140.207.54.74 /adv_envelop/index.php/Api/Wxpay/OrderChange
+: 微信支付回调开始
+[ 2017-12-19T23:26:58+08:00 ] 140.207.54.74 /adv_envelop/index.php/Api/Wxpay/OrderChange
+: {"appid":"wx889375fdef84a6ee","bank_type":"CFT","cash_fee":"103","fee_type":"CNY","is_subscribe":"N","mch_id":"1489667292","nonce_str":"iadf7bx9zm4lgoli0oytouer7z9fvyr0","openid":"oDLoC0cKVFSV14Eye-kz1WiHFRAk","out_trade_no":"H2017121923265394168069","result_code":"SUCCESS","return_code":"SUCCESS","sign":"EB9EA95074C0C6C5E0B5F4745608A7A5","time_end":"20171219232657","total_fee":"103","trade_type":"JSAPI","transaction_id":"4200000015201712197449816430"}
+[ 2017-12-19T23:29:44+08:00 ] 140.207.54.74 /adv_envelop/index.php/Api/Wxpay/OrderChange
+: 微信支付回调开始
+[ 2017-12-19T23:29:44+08:00 ] 140.207.54.74 /adv_envelop/index.php/Api/Wxpay/OrderChange
+: {"appid":"wx889375fdef84a6ee","bank_type":"CFT","cash_fee":"1","fee_type":"CNY","is_subscribe":"N","mch_id":"1489667292","nonce_str":"qpkp1ecwurzr3hq2dgs43t9z74y15iua","openid":"oDLoC0cKVFSV14Eye-kz1WiHFRAk","out_trade_no":"H2017121923293952873111","result_code":"SUCCESS","return_code":"SUCCESS","sign":"6DA07A33567E0D4D9C4A7ED4BF646502","time_end":"20171219232943","total_fee":"1","trade_type":"JSAPI","transaction_id":"4200000020201712197425861984"}

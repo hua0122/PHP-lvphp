@@ -1,0 +1,17 @@
+[ 2017-12-29T04:18:38+08:00 ] 113.65.28.141 /zhwmkl_envelop/index.php/Admin/BasicConfig/site_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000230s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000220s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000691s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000213s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000230s ]
+SQL: SHOW COLUMNS FROM `hb_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `hb_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hb_options` [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: F_MCHID /data/web/envelop/zhwmkl_envelop/application/Admin/Controller/BasicConfigController.class.php 第 40 行.
+NOTIC: [8] Undefined index: F_KEY /data/web/envelop/zhwmkl_envelop/application/Admin/Controller/BasicConfigController.class.php 第 41 行.
+SQL: SELECT * FROM `hb_options` WHERE ( option_name='customer_options' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: UPDATE `hb_options` SET `option_id`='12',`option_name`='customer_options',`option_value`='{\"site_name\":\"\\u7206\\u4f60\\u59b9\",\"site_icp\":\"123\",\"site_tongji\":\"312\",\"site_copyright\":\"132\",\"G_APPID\":\"wx3e3bbdf9fcc01316\",\"G_APPSECRET\":\"a7ecfa38a88df3acc8bf7fd7d658e4b7\",\"G_MCHID\":\"1492633832\",\"G_KEY\":\"zhi8huis52df244sd65sdfwe4r43fsfp\",\"C_APPID\":\"wx752b20c05257dbe1\",\"C_APPSECRET\":\"95f57e55839e1482804c1929c21ec00c\",\"C_JUMP\":\"pages\\/index\\/index?id=123\",\"new_tpl\":\"news_tpl_send : maCtOP96wLIi9ynCnHJ17DgcnQcvmHw9-v1WlkM9yHg,\\nnews_tpl_finish : 044zEgNwSPRBG_sL2Hy44QPH91kFH3R8lKoQIAUA1Gg,\\nnews_tpl_refund: XitxWZCwM29DZm87K1Ivw2r4-AIa8H2A-NbiF0qWwvQ\",\"commision\":\"1\",\"advcommision\":\"3\",\"amount_min\":\"0.01\",\"receive_amount_min\":\"0.01\",\"min_withdrawals\":\"1\",\"max_withdrawal_time\":\"1000000\",\"title\":\"\\u798f\\u5229\\u5929\\u5929\\u9886\",\"description\":\"\\u70b9\\u51fb\\u9886\\u53d6\",\"url\":\"http:\\/\\/mp.weixin.qq.com\\/s\\/BmN4BK8f5ZgNqJehsWXS4w\",\"imgurl\":\"\\/zhwmkl_envelop\\/data\\/upload\\/\\/zhwmkl_envelop\\/data\\/upload\\/\\/zhwmkl_envelop\\/data\\/upload\\/\\/zhwmkl_envelop\\/data\\/upload\\/\\/zhwmkl_envelop\\/data\\/upload\\/\\/zhwmkl_envelop\\/data\\/upload\\/\\/zhwmkl_envelop\\/data\\/upload\\/\\/zhwmkl_envelop\\/data\\/upload\\/\\/zhwmkl_envelop\\/data\\/upload\\/\\/zhwmkl_envelop\\/data\\/upload\\/\\/zhwmkl_envelop\\/data\\/upload\\/\\/zhwmkl_envelop\\/data\\/upload\\/\\/adv_envelop\\/data\\/upload\\/\\/adv_envelop\\/data\\/upload\\/\\/adv_envelop\\/data\\/upload\\/\\/adv_envelop\\/data\\/upload\\/\\/adv_envelop\\/data\\/upload\\/\\/adv_envelop\\/data\\/upload\\/\\/adv_envelop\\/data\\/upload\\/\\/adv_envelop\\/data\\/upload\\/\\/adv_envelop\\/data\\/upload\\/\\/adv_envelop\\/data\\/upload\\/admin\\/20171219\\/5a387717493fe.jpg\"}' WHERE ( option_name='customer_options' ) [ RunTime:0.0002s ]
+

@@ -1,0 +1,8 @@
+[ 2017-12-05T11:38:02+08:00 ] 140.207.54.76 /index.php/Api/Wxpay/OrderChange
+: 微信支付回调开始
+[ 2017-12-05T11:38:02+08:00 ] 140.207.54.76 /index.php/Api/Wxpay/OrderChange
+: {"appid":"wx6f8f268f3ea47834","bank_type":"ABC_DEBIT","cash_fee":"101","fee_type":"CNY","is_subscribe":"N","mch_id":"1492633832","nonce_str":"2n33j3zdn79lvuyl1madr0nddhngenti","openid":"os2wg0SdyDRTOTjAQqC24X4isXww","out_trade_no":"H2017120511375375568398","result_code":"SUCCESS","return_code":"SUCCESS","sign":"EC5B4A43F8D7B1DA63BD5F2ABC3DE032","time_end":"20171205113801","total_fee":"101","trade_type":"JSAPI","transaction_id":"4200000018201712059192659206"}
+[ 2017-12-05T16:00:30+08:00 ] 140.207.54.75 /index.php/Api/Wxpay/OrderChange
+: 微信支付回调开始
+[ 2017-12-05T16:00:30+08:00 ] 140.207.54.75 /index.php/Api/Wxpay/OrderChange
+: {"appid":"wx6f8f268f3ea47834","bank_type":"ICBC_DEBIT","cash_fee":"101","fee_type":"CNY","is_subscribe":"N","mch_id":"1492633832","nonce_str":"vpnk3e03cp7vcnrzylbdg7exdnigtmxx","openid":"os2wg0auzADSKlBs6amhTu9K0xTs","out_trade_no":"H2017120516002541113230","result_code":"SUCCESS","return_code":"SUCCESS","sign":"A5B51339AD2A66ECF86BE4BB3F339D42","time_end":"20171205160030","total_fee":"101","trade_type":"JSAPI","transaction_id":"4200000009201712059243947809"}

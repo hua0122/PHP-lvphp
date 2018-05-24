@@ -1,0 +1,252 @@
+/* pages/squareHome/squareHome.wxss */
+.tab{
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    width:100%;
+    height:100rpx;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.tab-con{
+    width: 50%;
+    color:#333;
+    font-size: 28rpx;
+    height:100rpx;
+    line-height:100rpx;
+    text-align: center;
+    
+}
+
+.person_box{
+    background: #fff;
+    z-index: 100;
+    width:100%;
+    position: fixed;
+    top:100rpx;
+}
+.phone_select{
+    width:100%;
+    overflow: hidden;
+}
+.select_one{
+    padding-left: 130rpx;
+    height:82rpx;
+    line-height:82rpx;
+    border-top:2rpx solid #f0f0f0;
+    font-size: 28rpx;
+    color: #333;
+    position: relative;
+}
+.select_one.on{
+  color: #de4c56;
+}
+.select_one .ico-choose{
+  width: 30rpx;
+  height: 22rpx;
+  position: absolute;
+  right: 172rpx;
+  top: 30rpx;
+  display: none;
+}
+.select_one.on .ico-choose{
+  display: block;
+}
+.personal_image{
+    z-index: 100;
+    position: absolute;
+    margin:40rpx 20rpx 40rpx 0;
+    transition: All 0.4s ease;  
+    -webkit-transition: All 0.4s ease;
+    display:inline-block; 
+    width:0; 
+    height:0; 
+    margin-left:10px;
+    margin-top: 46rpx; 
+    vertical-align:middle;  
+    border-top:4px dashed; 
+    border-right:4px solid transparent; 
+    border-left:4px solid transparent;
+}
+.rotateRight{
+    transform: rotate(180deg);
+    color: #DE4C56;
+}
+.tab-con .tab-txt{
+  color: #333;
+}
+.textoncol{
+  color: #DE4C56;
+}
+.darkbg{
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 88;
+}
+.red-packetList-bg{
+  margin-top: 20rpx;
+  background: #fff;
+  height: auto;
+  width: 100%;
+}
+.red-packetList-bg .adv{
+  width: 100%;
+  height: 200rpx;
+}
+.red-packetList-imgbg{
+  width: 100%;
+  height: 400rpx;
+  overflow: hidden;
+  position: relative;
+}
+.red-packetList-imgbg .adimg{
+  width: 100%;
+  height: 100%;
+}
+.red-packetList-imgbg image{
+  width: 100%;
+  height: 100%;
+}
+.red-packetList-imgbg #myVideo{
+  width: 100%;
+  height: 100%;
+}
+
+.red-packetList-contentype{
+  color: #fff;
+  font-size: 24rpx;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 10rpx 16rpx;
+  border-radius: 4rpx;
+  position: absolute;
+  top: 28rpx;
+  left: 28rpx;
+}
+red-packetList-con{
+  width: 90%;
+  margin: 0 5%;
+  overflow: hidden;
+}
+.red-packetList-con-advIco{
+  padding: 5rpx 8rpx;
+  border:1rpx solid #DE4C56;
+  color: #DE4C56;
+  font-size: 28rpx;
+  margin-right: 20rpx;
+  border-radius: 4rpx;
+}
+
+.red-packetList-txt{
+  overflow: hidden;
+}
+.red-packetList-txt-l{
+  float: left;
+  overflow: hidden;
+}
+.red-packetList-txt-l-headico{
+  float: left;
+  width: 68rpx;
+  height: 68rpx;
+  background: #000;
+  border-radius: 50%;
+  margin: 10rpx 28rpx 18rpx 0;
+  overflow: hidden;
+}
+.red-packetList-con{
+  width: 90%;
+  margin:0 5%;
+  padding: 10rpx 0;
+  overflow: hidden;
+  text-align: left;
+  border-bottom: 1rpx solid #f0f0f0;
+}
+.red-packetList-con-advIco{
+  padding: 0rpx 4rpx;
+  border:1rpx solid #DE4C56;
+  color: #DE4C56;
+  font-size: 28rpx;
+  line-height: 28rpx;
+  margin-right: 20rpx;
+  border-radius: 4rpx;
+  display: initial;
+  float: left;
+  margin-top: 12rpx;
+}
+.red-packetList-con-advConten{
+  font-size: 28rpx;
+  color: #333;
+  text-align: left;
+  display: initial;
+}
+.red-packetList-txt{
+  width: 90%;
+  margin: 20rpx 5% 0;
+  position: relative;
+}
+.red-packetList-txt-l-headico image{
+  width: 100%;
+  height: 100%;
+}
+.red-packetList-txt-l-con{
+  float: left;
+  margin-top: 6rpx;
+}
+.red-packetList-txt-l-con .sender-name{
+  color: #333;
+  font-size: 28rpx;
+  max-width: 270rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space:nowrap;
+}
+.red-packetList-txt-l-con .senderDate{
+  color: #666;
+  font-size: 24rpx;
+  margin-top: 8rpx;
+}
+.red-packetList-txt-r{
+  float: right;
+  margin-top: 0rpx;
+}
+.red-num{
+  font-size: 28rpx;
+  color: #666;
+  line-height: 38rpx;
+  position: absolute;
+  bottom: 14rpx;
+  right: 70rpx;
+}
+.red-packetList-txt-r .red-packetList-txt-r-ico{
+  
+  float: right;
+}
+.red-packetList-txt-r-ico .red-packetList-txt-r-ico-ringht{
+  width: 19rpx;
+  height: 32rpx;
+  float: right;
+  margin-left: 4rpx;
+  margin-top: 4rpx;
+  position:relative;
+  top:25rpx;
+}
+.red-packetList-txt-r-ico .red-packetList-txt-r-ico-redpacketimg{
+  width: 40rpx;
+  height: 35rpx;
+  float: right;
+  margin-top:25rpx;
+  margin-left: 6rpx;
+}
+.red-packetList-txt-r-txt{
+  color: #333;
+  font-size: 28rpx;
+  float: left;
+}
+.red-packetList-txt-r-txt .red{
+  color: #DE4C56;
+}

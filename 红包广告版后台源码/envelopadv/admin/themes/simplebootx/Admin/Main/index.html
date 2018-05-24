@@ -1,0 +1,33 @@
+<admintpl file="header" />
+<style>
+.home_info li em {
+	float: left;
+	width: 120px;
+	font-style: normal;
+}
+li {
+	list-style: none;
+}
+</style>
+</head>
+<body>
+	<div class="wrap">
+		<div id="home_toptip"></div>
+
+		<h4 class="well">{:L('SYSTEM_INFORMATIONS')}</h4>
+		<div class="home_info">
+			<ul>
+				<volist name="server_info" id="vo">
+					<li><em>{$key}</em> <span>{$vo}</span></li>
+				</volist>
+			</ul>
+		</div>
+	</div>
+	<script src="__PUBLIC__/js/common.js"></script>
+	<php>
+		$lang_set=defined('LANG_SET')?LANG_SET:'';
+		$thinkcmf_version=defined('THINKCMF_VERSION')?THINKCMF_VERSION:'';
+	</php>
+
+</body>
+</html>

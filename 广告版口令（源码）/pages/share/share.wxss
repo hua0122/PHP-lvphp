@@ -1,0 +1,149 @@
+/**share.wxss**/
+page{
+  height: 100%;
+  background: #DE4C56;
+  overflow:hidden;
+
+}
+.container{
+  padding: 0;
+  margin: 0;
+  justify-content: flex-start;
+}
+
+.box{
+  width: 750rpx;
+  height: 100%;
+}
+.upper{
+  width: 100%;
+  height: 460rpx;
+  overflow: hidden;
+  position: relative;
+}
+
+.front{
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 30rpx;
+  color: #fff;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.front .avatar{
+  display: block;
+  width: 200rpx;
+  height: 192rpx;
+  text-align: center;
+  margin: 0rpx auto;
+}
+.front .avatar .ownerimg{
+   width: 142rpx;
+  height: 142rpx;
+  border-radius: 50%;
+  margin-top: 28rpx
+}
+.front .avatar .owner-bg{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.redtips text{
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 8rpx;
+  font-size: 28rpx;
+}
+.redtips image{
+  display: inline-block;
+  width: 30rpx;
+  height: 32rpx;
+  vertical-align: middle;
+}
+.front .describe{
+  width: 600rpx;
+  margin: 15rpx auto 0;
+  line-height: 46rpx;
+  font-weight: 700;
+}
+
+.lower{
+  width:100%;
+  position: relative;
+}
+.lower .ewm{
+  width: 202rpx;
+  height: 202rpx;
+  border-radius: 50%;
+  background: #f0f0f0;
+  margin: -112rpx auto 0
+}
+.lower .ewm .ewmImg{
+  display: inline-block;
+  width: 182rpx;
+  height: 182rpx;
+  border-radius: 50%;
+  margin: 10rpx;
+  overflow: hidden;
+  position: relative;
+}
+.lower .ewm .ewmImg image{
+  width: 750rpx;
+  height: 1000rpx;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -500rpx;
+  margin-left: -375rpx;
+}
+.operation{
+  width:700rpx;
+  height: 340rpx;
+  margin: 0 auto;
+  padding: 40rpx 0 34rpx;
+  /* background: #fff; */
+  border-radius: 10rpx;
+  text-align: center
+}
+
+.operation .btn button{
+  font-size: 28rpx;
+  width: 690rpx;
+  height: 78rpx;
+  border: none;
+  line-height: 78rpx;
+  color: #fff;
+  margin-top: 40rpx;
+}
+.operation .btn .retransmission{
+  background: #009944;
+}
+.operation .btn .generate{
+  background: #F0F0F0;
+  margin-bottom: 20rpx;
+  color: #333;
+}
+.operation .mytry{
+  display: inline-block;
+  width: 690rpx;
+  height: 78rpx;
+  line-height: 78rpx;
+  color: #fff;
+  font-size: 28rpx;
+}
+
+.adv{
+  margin: 0 auto;
+}
+
+.zhygg{
+  /* margin-top: 20rpx; */
+  margin:40rpx 0 0;  
+  font-size: 26rpx;
+  text-align: center
+}
+.zhygg text{
+  color: #fff;
+}

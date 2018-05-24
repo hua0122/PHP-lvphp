@@ -1,0 +1,67 @@
+<!--pages/squareHome/squareHome.wxml-->
+<view class="tab">
+  <view class="tab-con tab-txt {{selectArea1 ? 'textoncol' :''}}" bindtap="clickredPacket">
+    <text>{{Packetrange1[Packetvalue1]}}</text>
+    <view src="/images/buttom-down.png" class="personal_image {{selectArea1 ? 'rotateRight' :''}}"></view>
+  </view>
+  <view class="tab-con tab-txt {{selectArea2 ? 'textoncol' :''}}" bindtap="clickrank">
+    <text>{{Packetrange2[Packetvalue2]}}</text>
+    <view class="personal_image {{selectArea2 ? 'rotateRight' :''}}"></view>
+  </view>
+</view>
+<view class="person_box">
+  <view class="phone_select" hidden="{{!selectArea1}}">
+    <block wx:for="{{Packetrange1}}">
+      <view class="select_one {{Packetvalue1 == index ? 'on' : ''}}" bindtap="mySelect1" data-range='{{index}}'>{{item}}<image class='ico-choose' src='/images/choose.png' data-range='{{index}}'></image></view>
+    </block>
+  </view>
+  <view class="phone_select" hidden="{{!selectArea2}}">
+    <block wx:for="{{Packetrange2}}">
+      <view class="select_one {{Packetvalue2 == index ? 'on' : ''}}" bindtap="mySelect2" data-range='{{index}}'>{{item}}<image class='ico-choose' src='/images/choose.png' data-range='{{index}}'></image></view>
+    </block>
+  </view>
+</view>
+<view style='height:100rpx;'></view>
+<view class='lists'>
+<block wx:for="{{redPacketList}}"  wx:for-item="item">
+  <navigator class='red-packetList-bg' url='../recordDetails/recordDetails?pid={{item.id}}'>
+    <view class='red-packetList-imgbg'>
+      <view class='adimg'>
+        <image src='{{item.adimgsrc}}'></image>
+        <view class='red-packetList-contentype'>{{redPackettype[item.mode]}}</view>
+      </view>
+    </view>
+    <view class='red-packetList-con' wx:if="{{item.adv_text}}">
+      <text class='red-packetList-con-advIco'>广告</text>
+      <text class='red-packetList-con-advConten'>{{item.adv_text}}</text>
+    </view>
+    <view class='red-packetList-txt'>
+      <view class='red-packetList-txt-l'>
+        <view class='red-packetList-txt-l-headico'>
+          <image src='{{item.ownerImg}}'></image>
+        </view>
+        <view class='red-packetList-txt-l-con'>
+          <view class='sender-name'>{{item.ownerName}}</view>
+          <view class='senderDate'>{{item.senderDate}}</view>
+        </view>
+      </view>
+      <view class='red-packetList-txt-r'>
+        <view class='red-packetList-txt-r-ico'>
+          <image class='red-packetList-txt-r-ico-ringht' src='/images/right-arrows.png'></image>
+          <image class='red-packetList-txt-r-ico-redpacketimg' src='/images/square-redpacket-ig.png'></image>
+        </view>
+        <view class='red-packetList-txt-r-txt'>共抢<text class='red'>{{item.ownerzje}}</text>元</view>
+      </view>
+      <view class='red-num'>领取{{item.receive_num}}/{{item.num}}个</view>
+    </view>
+  </navigator>
+  <!-- 平台广告 -->
+  <navigator wx:if="{{index == 2}}" class='red-packetList-bg' url='{{advpt.url}}{{slide_id}}'>
+    <view class='adv'>
+      <image src='{{advpt.slide_pic}}'></image>
+      <text>广告</text>
+    </view>
+  </navigator>
+</block>
+</view>
+<view class='darkbg' hidden='{{hideedarkbg}}'></view>

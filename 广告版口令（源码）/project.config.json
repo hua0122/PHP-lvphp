@@ -1,0 +1,35 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "1.6.6",
+	"appid": "wx73deec6e39dd64c3",
+	"projectname": "%E7%89%A9%E7%A0%81%E5%8F%A3%E4%BB%A4",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "自定义",
+					"pathName": "pages/recordDetails/recordDetails",
+					"query": "scene = 25"
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,253 @@
+/**record.wxss**/
+page{
+  background: #fff;
+}
+.container{
+  height: 100%;
+}
+.nav{
+  width: 100%;
+  height: 88rpx;
+  background:#DE4C56;
+  position: absolute;
+  top: 0;
+  z-index: 100
+}
+.nav>view{
+  width: 50%;
+  height: 88rpx;
+  line-height: 90rpx;
+  text-align: center;
+  float: left;
+  color: #fff;
+  font-size: 32rpx;
+}
+.nav>view.on{
+  color: #fff;
+  width: 50%;
+  position: relative;
+
+}
+.nav>view.on text::before{
+  content:" ";
+  height:41%;
+  border-bottom:4rpx solid #fff;
+  width:35%;
+  position:absolute;
+  left:32%;
+  bottom:8%;
+}
+
+swiper{width: 100%;height: 100%;}
+.swiper-scroll{
+  height: 100%;
+}
+.con-box{
+  height: auto;
+  min-height: 100%;
+  position: relative;
+}
+.userinfo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 120rpx;
+}
+.userinfo .headframe{
+  display: block;
+  width: 200rpx;
+  height: 192rpx;
+  text-align: center;
+  margin: 0 auto;
+}
+.userinfo-avatar {
+  width: 142rpx;
+  height: 142rpx;
+  border-radius: 50%;
+  margin-top: 40rpx
+}
+.userinfo-name{
+  font-size: 30rpx;
+  color: #333;
+  margin: 26rpx 0 0;
+}
+/* .picon{
+  width: 124rpx;
+  height: 124rpx;
+  margin: 14rpx auto 20rpx;
+}
+.picon1{
+  background: url("http://ff-open.oss-cn-hangzhou.aliyuncs.com/appletimg/fa.png") no-repeat center center/auto 100%;
+}
+.picon2{
+  background: url("http://ff-open.oss-cn-hangzhou.aliyuncs.com/appletimg/shou.png") no-repeat center center/auto 100%;
+} */
+.count{
+  width: 100%;
+  height: 131rpx;
+  text-align: center;
+}
+.count>view{
+  display: inline-block;
+  width: 50%;
+  padding-top: 10rpx;
+}
+.count-t{
+  font-size: 28rpx;
+  color: #999;
+  margin-bottom: 16rpx;
+}
+.count text{
+  font-size: 36rpx;
+  color: #333;
+  font-weight: 700;
+}
+.ls{
+  width: 100%;
+  margin-top:30rpx; 
+  font-size: 28rpx;
+  color: #333;
+}
+.ls-item{
+  padding: 16rpx 30rpx;
+  overflow: hidden;
+  position: relative;
+}
+.ls-item:after{
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2rpx;
+  border-bottom: 1rpx solid #f5f5f5;
+  opacity: .7;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.ls-item:first-child::before{
+  content: '';
+  display: block;
+  width: 100%;
+  height: 4rpx;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.ls-t{
+  overflow: hidden;
+}
+.ls-t .money{
+  font-size: 32rpx;
+}
+.ls-b{
+  color: #999;
+}
+.ls-l{
+  float: left
+}
+.ls-l.type{
+  display: inline-block;
+  height: 32rpx;
+  line-height: 34rpx;
+  border: 2rpx solid #DE4C56;
+  font-size: 24rpx;
+  padding: 0 6rpx;
+  margin-right: 16rpx;
+  border-radius: 4rpx;
+  color: #DE4C56
+}
+.ls-l.quest{
+  display: inline-block;
+  height: 36rpx;
+  line-height: 36rpx;
+  max-width: 330rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space:nowrap;
+}
+.ls-r{
+  float: right;
+}
+.ls-item text{
+  line-height: 46rpx;
+}
+
+.ls-s{
+  display: inline-block;
+  vertical-align: top;
+}
+.ls-img{
+  width: 80rpx;
+  height: 80rpx;
+  margin-top:6rpx
+}
+.ls-img image{
+  width:100%;
+  height: 100%;
+}
+.ls-c{
+  margin-left: 20rpx;
+  position: relative;
+}
+.ls-c .ls-c-type{
+  display: block;
+  height: 32rpx;
+  line-height: 34rpx;
+  border: 2rpx solid #DE4C56;
+  padding: 0 6rpx;
+  font-size: 24rpx;
+  border-radius: 4rpx;
+  color: #DE4C56;
+  white-space:nowrap;
+  position: absolute;
+  bottom: 6rpx;
+  left: 216rpx;
+}
+.ls-c .ls-c-t{
+  display: inline-block;
+  width: 370rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space:nowrap;
+}
+.ls-c .ls-c-b{
+  display: block;
+  color: #bbb;
+}
+.clear{
+  width: 100%;
+  height: 80rpx;
+}
+.question{
+  width: 100%;
+  font-size: 24rpx;
+  text-align: center;
+  color: #ccc;
+  position: absolute;
+  bottom: 20rpx;
+}
+.bold{
+  font-weight: 700;
+}
+.zhygg{
+  margin-bottom: 10rpx;
+}
+/* 手气最佳 */
+.maxmoney{
+  color: #DE4C56;
+  font-size: 28rpx;
+  overflow: hidden;
+  position: absolute;
+  right: 30rpx;
+  bottom: 20rpx;
+}
+.maxmoney image{
+  width: 28rpx;
+  height: 22rpx;
+  float: right;
+  margin-top: 12rpx;
+  margin-right: 10rpx;
+}
+.maxmoney text{
+  float: right;
+}

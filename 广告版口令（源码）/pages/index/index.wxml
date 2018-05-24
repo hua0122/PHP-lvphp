@@ -1,0 +1,167 @@
+<!--index.wxml-->
+<button class='sqbtn' wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 加载中••• </button>
+<block wx:else>
+<view class="container">
+  <view class='top'>
+    <view class='mode {{mode == 0 ? "on":""}}' data-current="0" bindtap="swichNav">口令红包</view>
+    <view class='mode {{mode == 1 ? "on":""}}' data-current="1" bindtap="swichNav">祝福红包</view> 
+    <view class='mode {{mode == 2 ? "on":""}}' data-current="2" bindtap="swichNav">问答红包</view>  
+  </view>
+  <view class='warning'><image src="/images/warning.png"></image>平台严打黄赌毒、恐怖暴力内容，一经发现永久查封</view>
+  <swiper class='swiper{{mode}}' current="{{mode}}" duration="{{duration}}" bindchange="bindchange">
+    <swiper-item>
+      <view class='clear-top'></view>
+      <view class="box">
+        <view class="userinfo">
+            <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+        </view>
+        <form bindsubmit="formSubmit" report-submit="true">
+          <view class='form-password'>
+            <view class='txt txt1'><text>设置口令</text><input name="kl"  maxlength="20" bindinput="bindKLInput" value='{{textCN}}' placeholder-style="color:#999" placeholder="谢谢老板" /></view>
+          </view>
+          <view class='remark'>小伙伴们说对口令就能获得随机打赏</view>
+          <view class='txt'><text>赏金 (元)</text><input name="sj" type="digit" maxlength="8" bindblur="bindJEInput" value='{{sum}}' placeholder-style="color:#999" placeholder="填写金额" /></view>
+          <view class='txt'><text>数量 (个)</text><input name="sl" type="number" maxlength="3" bindblur="bindSLInput" value='{{num}}' placeholder-style="color:#999" placeholder="填写数量" /></view>
+
+          <view class='on-off'>
+            <view class='switchAdv'>
+              <text>发布广告</text>
+              <switch color='#009944' class='switch1' checked="{{advert}}" name="advert" bindchange="switchAdv"/>
+            </view>
+            <view class='switchSquare'>
+              <text>分享到广场</text>
+              <switch color='#009944' checked="{{piazza}}" name="piazza" bindchange="switchPz"/>
+            </view>
+          </view>
+          
+          <view class='mb40'></view>
+          <view class="btn-area">
+            <button formType="submit" hover-class='hover-submit'>{{btn}}</button>
+          </view>
+          <view class='ts2'>需支付￥{{serviceCharge}}服务费，优先使用余额￥{{balance}}</view>
+        </form>
+      </view>
+    </swiper-item>
+
+    <swiper-item>
+      <view class='clear-top'></view>
+      <view class="box">
+        <view class="userinfo">
+            <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+        </view>
+        <form bindsubmit="formSubmit" report-submit="true">
+          <view class='form-password'>
+            <view class='txt-btn'>
+              <button wx:if="{{!audiostate}}" class="btn" hover-class='hover-btn' bindlongtap='longtap' bindtouchcancel='touchcancel' bindtouchend='touchend'>
+                <image src='/images/microphone.png'></image>
+                <text>{{hint1}}</text>
+              </button>
+              <block wx:else>
+              <view class='audio-3'>
+              <view class='playaudio {{playID == "1" ? "on" : ""}}' bindtap="audioPlay" data-key='1' hover-class='hover-btn'>{{time}}"</view>
+              <view class='reset' bindtap='resetaudio' hover-class='hover-btn'>重 置</view>
+              </view>
+              </block>
+            </view>
+          </view>
+          <view class='remark'>小伙伴们听完你的寄语就能领赏金了</view>
+          <view class='txt'><text>赏金 (元)</text><input name="sj" type="digit" maxlength="8" bindblur="bindJEInput" value='{{sum}}' placeholder-style="color:#999" placeholder="填写金额" /></view>
+          <view class='txt'><text>数量 (个)</text><input name="sl" type="number" maxlength="3" bindblur="bindSLInput" value='{{num}}' placeholder-style="color:#999" placeholder="填写数量" /></view>
+          <view class='on-off'>
+            <view class='switchAdv'>
+              <text>发布广告</text>
+              <switch color='#009944' class='switch1' checked="{{advert}}" name="advert" bindchange="switchAdv"/>
+            </view>
+            <view class='switchSquare'>
+              <text>分享到广场</text>
+              <switch color='#009944' checked="{{piazza}}" name="piazza" bindchange="switchPz"/>
+            </view>
+          </view>
+          <view class='mb40'></view>
+          <view class="btn-area">
+            <button formType="submit" hover-class='hover-submit'>{{btn}}</button>
+          </view>
+          <view class='ts2'>需支付￥{{serviceCharge}}服务费，优先使用余额￥{{balance}}</view>
+        </form>
+      </view>
+    </swiper-item>
+
+    <swiper-item>
+      <view class='clear-top'></view>
+      <view class="box">
+        <view class="userinfo">
+            <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+        </view>
+        <form bindsubmit="formSubmit" report-submit="true">
+          <view class='form-password'>
+            <view class='form-interlocution'>
+              <view class='form-password'>
+            <view class='txt-btn'>
+              <button wx:if="{{!audiostate2}}" class="btn" hover-class='hover-btn' bindlongtap='longtap' bindtouchcancel='touchcancel' bindtouchend='touchend'>
+                <image src='/images/microphone.png'></image>
+                <text>{{hint2}}</text>
+              </button>
+              <block wx:else>
+              <view class='audio-3'>
+              <view class='playaudio {{playID == "2" ? "on" : ""}}' bindtap="audioPlay" data-key='2' hover-class='hover-btn'>{{time2}}"</view>
+              <view class='reset' bindtap='resetaudio' hover-class='hover-btn'>重 置</view>
+              </view>
+              </block>
+            </view>
+          </view>
+          <view class='remark'>小伙伴们听完你的问题，说对答案就能领赏金</view>
+              <view class='txt'><text>中文答案</text><input name="da"  maxlength="20" value='{{answer}}' placeholder-style="color:#999" placeholder="答案不要带标点符号" bindinput="bindDAInput" /></view>
+            </view>
+          </view>
+          
+          <view class='txt'><text>赏金 (元)</text><input name="sj" type="digit" maxlength="8" bindblur="bindJEInput" value='{{sum}}' placeholder-style="color:#999" placeholder="填写金额" /></view>
+          <view class='txt'><text>数量 (个)</text><input name="sl" type="number" maxlength="3" bindblur="bindSLInput" value='{{num}}' placeholder-style="color:#999" placeholder="填写数量" /></view>
+          <view class='on-off'>
+            <view class='switchAdv'>
+              <text>发布广告</text>
+              <switch color='#009944' class='switch1' checked="{{advert}}" name="advert" bindchange="switchAdv"/>
+            </view>
+            <view class='switchSquare'>
+              <text>分享到广场</text>
+              <switch color='#009944' checked="{{piazza}}" name="piazza" bindchange="switchPz"/>
+            </view>
+          </view>
+          <view class='mb40'></view>
+          <view class="btn-area">
+            <button formType="submit" hover-class='hover-submit'>{{btn}}</button>
+          </view>
+          <view class='ts2'>需支付￥{{serviceCharge}}服务费，优先使用余额￥{{balance}}</view>
+        </form>
+      </view>
+    </swiper-item>
+    <view class='cl'></view>
+  </swiper>
+  <view class='mide-record {{mide ? "on" : ""}}'><view class='mide-img'></view></view>
+  <!--上传图片-->
+  <view class='box-advert' wx:if="{{advert}}">
+    <buttom class='uploading-btn' bindtap="adimg" wx:if="{{!adimgstate}}">
+      <image src='/images/pic.png'></image>
+      <text>点击上传图片</text>
+    </buttom>
+    <view class='advert-img' wx:if="{{adimgstate}}">
+      <image src='{{adimgsrc.srcbd}}'></image>
+      <view class='close'  bindtap="closeadimg"><image class="img" src='/images/close.png'></image></view>
+    </view>
+    <view class='suggest'>建议尺寸750*400</view>
+    <!--上传视频-->
+    <buttom class='uploading-btn' bindtap="addvideo" wx:if="{{!videostate}}">
+      <image src='/images/video.png'></image>
+      <text>点击上传视频</text>
+    </buttom>
+    <view class='advert-img' wx:if="{{videostate}}"><video id="myVideo" src="{{videosrc.srcbd}}"><cover-view class='close'  bindtap="closevideo"><cover-image class="img" src='/images/close.png' /></cover-view></video></view>
+    <view class='textarea'>
+      <textarea placeholder="请输入您的广告语(最多70个字)" name="textarea" maxlength='70' placeholder-style="color:#ccc" bindinput="textareaip"/>
+    </view>
+    <view class='suggest'>*视频和图片同时上传时显示图片为封面</view>
+  </view>
+  <view class='adv'>
+    <image src='{{imgsTP[mode].slide_pic}}'></image>
+    <text>广告</text>
+  </view>
+</view>
+</block>

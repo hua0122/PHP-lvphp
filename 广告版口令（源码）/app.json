@@ -1,0 +1,46 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/recordDetails/recordDetails",
+    "pages/squareHome/squareHome",
+    "pages/userCenter/userCenter",
+    "pages/share/share",
+    "pages/balance/balance",
+    "pages/report/report",
+    "pages/help/help",
+    "pages/record/record",
+    "pages/logs/logs"
+  ],
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#DE4C56",
+    "borderStyle": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "发红包",
+        "iconPath": "images/red-packet.png",
+        "selectedIconPath": "images/red-packet-on.png"
+      },
+      {
+        "pagePath": "pages/squareHome/squareHome",
+        "text": "广场",
+        "iconPath": "images/square.png",
+        "selectedIconPath": "images/square-on.png"
+      },
+      {
+        "pagePath": "pages/userCenter/userCenter",
+        "text": "我的包",
+        "iconPath": "images/me.png",
+        "selectedIconPath": "images/me-on.png"
+      }
+    ]
+  },
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#de4c56",
+    "navigationBarTitleText": "语音口令",
+    "navigationBarTextStyle":"white"
+  }
+
+}

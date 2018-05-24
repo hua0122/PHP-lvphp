@@ -1,0 +1,103 @@
+<!--recordDetails.wxml-->
+
+  <view class="userinfo">
+    <button class='sqbtn' wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 加载中••• </button>
+    <block wx:else>
+      <view class='upper'>
+        <view class='headframe'><image class="userinfo-avatar" src="{{ownerImg}}" background-size="cover"></image></view>
+        <view class='userinfo-name'>{{ownerName}}</view>
+
+        <!-- 语音口令 -->
+        <view class='mode' wx:if="{{mode == 0}}" >
+          <view class='textCN'><view class='icon'></view>{{textCN}}</view>
+          <form wx:if="{{!receiveState}}" bindsubmit="formSubmit" report-submit="true">
+            <button class="btn {{state ? 'on' : ''}}" hover-class='hover-btn' bindtouchstart='touchstart' bindlongtap='longtap' bindtouchcancel='touchcancel' bindtouchend='touchend' formType="submit">
+              
+              <view><image wx:if="{{micrImage}}" class='micrImage' src='/images/microphone.png'></image>{{hint}}</view>
+            </button>
+          </form>
+          <block wx:else>
+            <view class='lqje'><text>{{receiveJE}}</text>元</view>
+          </block>
+        </view>
+
+        <!-- 真心寄语 -->
+        <view class='mode' wx:if="{{mode == 1}}" >
+          <view wx:if="{{!receiveState}}" class='zxjy-zjetxt'><text class='je'>{{zje}}</text>元</view>
+          <button class="btn on" hover-class='hover-btn' bindtap="audioPlay" data-key='99999'> 
+            <!-- 正在听取 -->
+            <view class='playaudiobtn'>
+              <image class='playaudiobtn-ico' src='{{playID == "99999" ? "/images/volume.png" : "/images/click-play-record.png"}}'></image>
+              <text>{{hint}}</text>
+            </view>
+          </button>
+          <view wx:if="{{receiveState}}" class='lqje'><text>{{receiveJE}}</text>元</view>
+          
+        </view>
+        <!-- 问答 -->
+        <view class='mode' wx:if="{{mode == 2}}" >
+          <button class="btn on" hover-class='hover-btn' bindtap="audioPlay" data-key='100000'> 
+            <!-- 正在听取 -->
+            <view class='playaudiobtn'>
+              <image class='playaudiobtn-ico' src='{{playID == "100000" ? "/images/volume.png" : "/images/click-play-record.png"}}'></image>
+              <text>{{playID == "100000" ?"语音问题播放中":'点击收听问题详情'}}</text>
+            </view>
+          </button>
+          <button wx:if="{{!receiveState}}" class="btn {{state ? 'on' : ''}}" hover-class='hover-btn' bindtouchstart='touchstart' bindlongtap='longtap' bindtouchcancel='touchcancel' bindtouchend='touchend' formType="submit">
+            <view><image wx:if="{{micrImage}}" class='micrImage' src='/images/microphone.png'></image>{{hint}}</view>
+          </button>
+          <block wx:else>
+            <view class='lqje'><text>{{receiveJE}}</text>元</view>
+          </block>
+        </view>
+
+
+        <view class='count'>
+          <view><button class='count-t' bindtap='toBalance'><image src='/images/withdraw-deposit-ico.png'></image>{{count.qtx}}</button></view>
+          <view><button class='count-t' bindtap='toIndex'><image src='/images/word-ioc.png'></image>{{count.fhb}}</button></view>
+          <view><button class='count-t' bindtap="toShare"><image src='/images/transpond-ico.png'></image>{{count.qzf}}</button></view>
+        </view>
+        <view class='mide-record {{mide ? "on" : ""}}'><view class='mide-img'></view></view>
+      </view>
+      <view class='redinfo'><view class='infotxt'>共<text>{{zje}}</text>元，领取<text>{{zlq}}/{{zgs}}</text>个</view>
+       <text class='report' bindtap='toreport'>举报</text> 
+      </view>
+      <!-- 广告 -->
+      <view class='red-packetList-bg' wx:if="{{advert}}">
+        <view class='red-packetList-imgbg'>
+          <image wx:if="{{!videostate}}" src='{{adimgsrc}}' bindtap='picture'></image>
+          <video wx:if="{{videostate}}" id="myVideo" controls src="{{videosrc}}" poster="{{adimgsrc}}"><cover-view class='red-packetList-contentype'>{{redPackettype[mode]}}</cover-view></video>
+        </view>
+        <view class='red-packetList-con'>
+          <text class='red-packetList-con-advIco'>广告</text>
+          <text class='red-packetList-con-advConten'>{{adv_text}}</text>
+        </view>
+      </view>
+      <view class='ls'>
+        <block wx:for="{{ls}}"  wx:for-item="item">
+          <view class='ls-item'>
+            <view class='ls-s ls-img'><image src="{{item.imgurl}}"></image></view>
+            <view class='ls-s ls-c'>
+              <text class='ls-c-t'>{{item.name}}</text>
+              <view class='ls-c-b'>
+                <view wx:if='{{mode == 1 ? false : true}}' class='audio {{index === playID ? "on" : ""}}' bindtap="audioPlay" data-key='{{index}}' style='width:{{item.width}}'><text>{{item.duration}}"</text><view class='bfz'><image src='{{index === playID ? "../../images/play-icon.gif" : "../../images/customer.png"}}'></image></view></view>
+              </view>
+            </view>
+            <view class='ls-s ls-r {{item.best != 1 ? "on" : ""}}'>
+              <view class='maxmoney' wx:if='{{item.best == 1}}'>
+                <text style='text-align: right;'>手气最佳</text>
+                <image src='/images/maxmoney-ico.png'></image>
+              </view>
+              <text class='bold'>{{item.lsje}} 元</text>
+              <text class='ls-r-b'>{{item.time}}</text>
+            </view>
+          </view>
+        </block>
+      </view>
+       <!-- 广告 -->
+      <view class='adv'>
+        <image src='{{advpt.slide_pic}}'></image>
+        <text>广告</text>
+      </view>
+    </block>
+  </view>
